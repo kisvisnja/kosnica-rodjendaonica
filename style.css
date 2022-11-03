@@ -1,0 +1,375 @@
+body{
+    background-image: url(../slike/pozadina2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(79, 79, 161);
+    background-attachment: fixed;
+    background-position: center;
+    max-width: 100%;
+    height:auto;
+}
+
+.nav{
+    overflow: hidden;
+    background:rgb(27, 27, 100);
+}
+.nav a{
+    text-decoration: none;
+    display: block;
+    float: left;
+    text-decoration: none;
+    color:beige;
+    font-weight:bold;
+    padding: 5px 10px;
+    text-align: center;
+}
+.nav a:hover{
+    background: beige;
+    color:rgb(27, 27, 100);
+    transition: 0.77;
+    
+}
+.nav a:active{
+    color: violet;
+}
+@media screen and (max-width: 750px) {
+    .nav a {
+      float: none;
+      width: 100%;
+      background-color: deeppink;
+    }
+  }
+
+.uvod{
+    width:50%;
+    
+    font-weight:bold;
+    margin:5% 25%;
+    font-size: 18px;
+    line-height: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+.uvod ul li{
+    list-style: none;
+    font-style: italic;
+    display: inline-block;
+    margin-right: 7%;
+    margin-bottom: 5%;
+    animation-name: anima;
+    animation-duration: 10s;
+}
+@keyframes anima {
+    0%{color: rgb(79, 79, 161)}
+    
+    25%{color:blueviolet;}
+    75%{color: crimson;}
+    100%{color: darkmagenta;}
+    
+}
+
+#kosnica{
+    font-family: mojfont;
+    font-size: 2em;
+    animation-name: anima1;
+    animation-duration: 10s;
+}
+@keyframes anima1{
+    from{color: rgb(10, 175, 112);}
+    
+    to{color:rgb(179, 16, 16);}
+}
+    
+@font-face {
+    font-family: mojfont;
+    src: url(../font/Cookie-Regular.ttf);
+}
+
+.opis{
+    width:70%;
+    font-weight:bold;
+    margin:5% 15%; 
+    text-align: center;
+    line-height: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media screen and (max-width: 750px) {
+    .opis,.uvod,.ponuda,.igraonica, .rođendaonica,.radionica,.adresa,.info, #galerija {
+     
+      font-family: Arial, Helvetica, sans-serif;
+      color: deeppink;}
+}
+
+.opis ul li{
+    list-style: none;
+    font-weight: bolder;
+}
+.ponuda{
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.ponuda h1,h3{
+    font-family: mojfont;
+    font-size: 30px;
+}
+.ponuda a{
+    text-decoration: none;
+}
+.ponuda a:hover{
+    color: blueviolet;
+    font-size: 35px;
+    border: 1px solid violet;
+    background-color: beige;
+}
+.igraonica {
+    margin: 5% 25%;
+    text-align: center;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    line-height: 2em;
+    border: 1px solid rgb(132, 132, 233);
+    border-radius: 10px 50px;
+    box-shadow: 5px 5px;
+}
+#igraonica{ 
+    font-style: italic;
+    font-weight: bold;
+    font-family: mojfont;
+    font-size: 2em;
+}
+.rođendaonica{
+    text-align: justify;
+    margin: 5% 20%;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    line-height: 2em;
+}
+.rođendaonica h2{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    margin:3%;
+    font-family: mojfont;
+    font-size: 2em;
+}
+.rođendaonica table{
+    text-align: center;
+    border: 3px solid rgb(25, 25, 138);
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+    height: 20%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    text-shadow: 5px 5px 10px rgb(104, 104, 236);
+    background-color: rgb(169, 243, 95);
+}
+.rođendaonica table caption{
+    margin:3%;
+    font-family: mojfont;
+    font-size: 2em;
+}
+.rođendaonica table  td{
+    padding: 3%;
+    text-align: center;
+}
+.radionica{
+    text-align: center;
+    margin: 5% 25%;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+   line-height: 2em;
+   border-radius: 10px 50px;
+   box-shadow: 5px 5px;
+}
+.radionica h2{
+   font-style: italic;
+    font-weight: bold;
+    margin:3%;
+    font-family: mojfont;
+    font-size: 2em;
+}
+.radionica ul li{
+    list-style: none;
+}
+#vrhstrane{
+    background-color: beige;
+    color: rgb(207, 23, 207);
+    border: 1px solid silver;
+    text-decoration: none;
+     width:10%;
+}
+#vrhstrane:hover{
+    background-color:rgb(207, 23, 207) ;
+    color: beige;
+    border: 2px solid rgb(207, 23, 207);
+    border-radius: 10px;
+    box-shadow: 10px 10px beige;
+}
+#lokacija{
+    font-family: mojfont;
+    text-align: center;
+    font-size: 40px;
+}
+
+.adresa {
+   width:40%;
+   height:50%;
+   margin: 5% 30%;
+   text-align: center;
+    line-height: 2em;
+    border:1px solid cadetblue;
+    border-radius: 7px 20px;
+    box-shadow: 10px 15px cadetblue ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transform:skew(5deg,5deg);
+    background-color: rgb(230, 230, 102);
+    animation-name: anima2;
+    animation-duration: 5s;
+}
+
+ .info{
+    width:40%;
+    height:50%;
+    margin: 5% 30%;
+    text-align: center;
+    line-height: 2em;
+    border:1px solid cadetblue;
+    border-radius: 10px 10px;
+    box-shadow: 5px 15px  cadetblue;
+    transform: skew(5deg,0deg);
+    background-color: rgb(230, 230, 102);
+    animation-name: anima2;
+    animation-duration: 5s;
+ }
+ @keyframes anima2 {
+     from{background-color: rgb(230, 230, 102);}
+     to{background-color: darkorange;}
+     
+ }
+    
+ form{
+     width: 50%;
+     height: 20%;
+     margin: 5% 25%;
+ }
+
+form h3{
+    font-size:25px;
+    text-transform:uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+ input[type="text"],input[type="email"]{
+    display:block;
+    width: 60%;
+    height:30%;
+    margin-left:20%;
+    margin-right: 20%;
+    margin-bottom: 4%;
+    text-align: center;
+    border:3px solid cadetblue;
+    border-radius: 10px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1% 5%;
+    letter-spacing: 1px;
+    background-color: rgb(230, 230, 102);
+} 
+form select{
+    border: 3px solid cadetblue;
+    width: 60%;
+    height:30%;
+    border-radius: 10px 10px;
+    font-style: italic;
+    font-weight: bold;
+    background-color:rgb(230, 230, 102);
+    margin-left:20%;
+    margin-right: 20%;
+    margin-bottom: 4%;
+    color:blue;
+    padding: 2%;
+}
+form textarea{
+    border: 3px solid cadetblue;
+    width: 60%;
+    border-radius: 10px 10px;
+    margin-left:20%;
+    margin-right: 20%;
+    margin-bottom: 4%;
+    background-color: rgb(230, 230, 102);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2%;
+
+}
+input[type="submit"],input[type="reset"]{
+    border: 2px solid cadetblue;
+    width: 18%;
+    height: 15%;
+    margin: 0% 16%;
+    padding: 2%;
+    border-radius: 10px 10px;
+    letter-spacing: 1px;
+    background-color: rgb(230, 230, 102);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input[type="text"]:hover,input[type="email"]:hover{
+    border:4px solid cadetblue;
+    box-shadow: 5px 5px  cadetblue;
+    background-color: yellow;
+    color: darkblue;
+}
+form select:hover{
+    border: 4px solid cadetblue;
+    box-shadow: 10px 10px  cadetblue;
+    background-color: yellow;
+    color:darkblue;
+}
+form textarea:hover{
+    border:4px solid cadetblue;
+    box-shadow: 10px 10px  cadetblue;
+    background-color: yellow;
+}  
+input[type="submit"]:hover{
+    background-color: chartreuse;
+    color:darkgreen;
+    font-weight: bold;
+    transition: 0.55s;
+    border: 1px solid darkgreen;
+}
+input[type="reset"]:hover{
+    background-color: rgb(212, 50, 50);
+    color: darkred;
+    font-weight: bold;
+    transition: 0.55s;
+    border: 1px solid darkred;
+}
+#galerija{
+    font-family: mojfont;
+    font-weight: bold;
+   font-size: 3em;
+   text-align: center;}
+
+.galerija{
+    float:left;
+    margin-left: 12%;
+    margin-right:1%;
+    margin-bottom: 8%;
+}
+.galerija p{
+    text-align: center;
+    margin-top: 1%;
+}
+.galerija img{
+    width: 330px;
+    height:300px;
+}
+.celina{
+    text-align: center;
+}
+
